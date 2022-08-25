@@ -6,6 +6,8 @@ from app.exceptions.unregistered_seller import UnregisteredSeller
 def validate_seller():
     try:
         time.sleep(0.2)
+        print(60 * "-")
+
         seller: str = input("Seller name: ").capitalize()
 
         if seller not in sellers_names:

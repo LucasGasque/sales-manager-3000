@@ -1,6 +1,6 @@
-
 def options_menu():
-    print("""
+    print(
+        """
     System options:
 
     [1] - Check sales rank
@@ -8,5 +8,7 @@ def options_menu():
     [3] - Register new sale
     [4] - Edit sale
     [5] - Delete sale
-    [6] - Exit
-    """)
+    [6] - Check sellers rank
+    [7] - Exit
+    """
+    )

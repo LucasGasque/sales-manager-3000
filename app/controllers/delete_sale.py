@@ -13,3 +13,6 @@ def delete_sale():
 
     time.sleep(0.2)
     print("Sale deleted successfully")
+
+    time.sleep(0.2)
+    print(60 * "-")

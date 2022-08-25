@@ -3,6 +3,8 @@ from app.configs.db import RANKED_SALES
 
 
 def get_ranked_list():
+    time.sleep(0.2)
+    print(60 * "-")
     for rank, sale in enumerate(RANKED_SALES):
         time.sleep(0.2)
         print(
@@ -10,3 +12,4 @@ def get_ranked_list():
         )
 
         time.sleep(0.2)
+    print(60 * "-")

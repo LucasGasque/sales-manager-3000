@@ -1,6 +1,7 @@
 from app import interface
 from app.controllers.get_ranked_list import get_ranked_list
 from app.controllers.get_registered_sellers_names import get_registered_sellers_names
+from app.controllers.get_sellers_rank import get_sellers_rank
 from app.controllers.register_new_sale import register_new_sale
 from app.controllers.edit_sale import edit_sale
 from app.controllers.delete_sale import delete_sale
@@ -8,7 +9,7 @@ from app.utils.valid_menu_options import valid_menu_options
 
 
 def sales_manager_3000():
-    # interface.system_initialization()
+    interface.system_initialization()
 
     while True:
 
@@ -35,6 +36,9 @@ def sales_manager_3000():
             delete_sale()
 
         if option == "6":
+            get_sellers_rank()
+
+        if option == "7":
             break
 
     interface.system_shutdown()

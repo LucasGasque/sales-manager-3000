@@ -28,6 +28,9 @@ def register_new_sale():
         time.sleep(0.2)
         print(f"Sale of {sale.product} for {sale.price} registered successfully")
 
+        time.sleep(0.2)
+        print(60 * "-")
+
     except Exception:
         time.sleep(0.2)
         print("Something went wrong, let's try again")
