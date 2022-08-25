@@ -1,4 +1,4 @@
-from time import time
+import time
 from app.configs.db import RANKED_SALES
 
 def get_ranked_list():

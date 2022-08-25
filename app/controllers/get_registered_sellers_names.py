@@ -1,6 +1,7 @@
 import time
 from app.configs.db import sellers_names
 
+
 def get_registered_sellers_names():
     print(60 * "-")
     print("Registered sellers:")
