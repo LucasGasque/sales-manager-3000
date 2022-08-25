@@ -1,4 +1,7 @@
 from app.configs.db import RANKED_SALES
 
+
 def calculate_id():
-    return RANKED_SALES[-1].id + 1 if RANKED_SALES else 1
+    ranked_sales_ids = [sale.id for sale in RANKED_SALES]
+
+    return max(ranked_sales_ids) + 1 if ranked_sales_ids else 1
