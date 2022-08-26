@@ -4,7 +4,7 @@
 
 # ✅ Project Description
 
-Simple terminal application to where sellers can register their sales and the manager can see the ranked consolidated list of the sales.
+Simple terminal application where sellers can register their sales and the manager can see the ranked consolidated list of the sales.
 
 # ✅ Features
 
