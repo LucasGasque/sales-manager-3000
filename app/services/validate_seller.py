@@ -8,22 +8,22 @@ def validate_seller():
         time.sleep(0.2)
         print(60 * "-")
 
-        seller: str = input("Seller name: ").capitalize()
+        seller: str = input("Seller name: ").capitalize().strip()
 
         if seller not in sellers_names:
             raise UnregisteredSeller
 
         time.sleep(0.2)
-        return seller
+        return False, seller
 
     except ValueError:
         time.sleep(0.2)
         print("Seller name should be a string")
 
-        validate_seller()
+        return True, None
 
     except UnregisteredSeller:
         time.sleep(0.2)
         print("Seller not registered")
 
-        validate_seller()
+        return True, None

@@ -12,11 +12,25 @@ from app.utils.calculate_id import calculate_id
 
 def register_new_sale():
     try:
-        seller: str = validate_seller()
-        customer: str = validate_customer()
+        seller_not_ok: bool = True
+        customer_not_ok: bool = True
+        product_not_ok: bool = True
+        price_not_ok: bool = True
+
+        while seller_not_ok:
+            seller_not_ok, seller = validate_seller()
+
+        while customer_not_ok:
+            customer_not_ok, customer = validate_customer()
+
         date_time: date = date.today()
-        product: str = validate_product()
-        price: float = validate_price()
+
+        while product_not_ok:
+            product_not_ok, product = validate_product()
+
+        while price_not_ok:
+            price_not_ok, price = validate_price()
+
         sales_id = calculate_id()
 
         sale = Sales(sales_id, seller, customer, date_time, product, price)

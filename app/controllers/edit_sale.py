@@ -10,11 +10,26 @@ from app.services.validate_seller import validate_seller
 
 def edit_sale():
     try:
-        sale_id: int = validate_sale_id(True)
-        seller: str = validate_seller()
-        customer: str = validate_customer()
-        product: str = validate_product()
-        price: float = validate_price()
+        sale_id_not_ok: bool = True
+        seller_not_ok: bool = True
+        customer_not_ok: bool = True
+        product_not_ok: bool = True
+        price_not_ok: bool = True
+
+        while sale_id_not_ok:
+            sale_id_not_ok, sale_id = validate_sale_id(edit=True)
+
+        while seller_not_ok:
+            seller_not_ok, seller = validate_seller()
+
+        while customer_not_ok:
+            customer_not_ok, customer = validate_customer()
+
+        while product_not_ok:
+            product_not_ok, product = validate_product()
+
+        while price_not_ok:
+            price_not_ok, price = validate_price()
 
         for sale in RANKED_SALES:
             if sale.id == sale_id:

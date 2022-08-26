@@ -4,7 +4,7 @@
 
 # ✅ Project Description
 
-Simple terminal only sales manager
+Simple terminal application to where sellers can register their sales and the manager can see the ranked consolidated list of the sales.
 
 # ✅ Features
 
@@ -28,7 +28,7 @@ or
 
 # ✅ Project status
 
-<h3 align="center"> 
+<h3 align="center">
     🚀 Concluded 🚀
 </h3>
 

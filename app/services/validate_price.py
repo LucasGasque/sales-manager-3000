@@ -7,7 +7,7 @@ from app.utils.validate_float import is_float
 def validate_price():
     try:
         time.sleep(0.2)
-        price: str = input("Product price: ")
+        price: str = input("Product price: ").strip()
 
         converted_price: float = float(price)
 
@@ -15,16 +15,16 @@ def validate_price():
             raise NotFloatType
 
         time.sleep(0.2)
-        return converted_price
+        return False, converted_price
 
     except ValueError:
         time.sleep(0.2)
         print("Price should be a float: 00.00")
 
-        validate_price()
+        return True, None
 
     except NotFloatType:
         time.sleep(0.2)
         print("Price should be a float: 00.00")
 
-        validate_price()
+        return True, None

@@ -4,8 +4,10 @@ from app.services.validate_sale_id import validate_sale_id
 
 
 def delete_sale():
+    sale_id_not_ok: bool = True
 
-    sale_id: int = validate_sale_id()
+    while sale_id_not_ok:
+        sale_id_not_ok, sale_id = validate_sale_id(edit=True)
 
     for sale in RANKED_SALES:
         if sale.id == sale_id:
