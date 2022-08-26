@@ -12,7 +12,7 @@ Simple terminal only sales manager
 - [x] Access to a Main Sales List where everyone using the app can see all the sales registered and ranked by the seller with the highest amount sold.
 - [x] The ability to edit or remove a specific sale that might eventually be added with wrong data.
 
-# ✅ Instalação
+# ✅ How to run the app
 
 Since this is only a prototype, and only runs on terminal, all you need to do is clone the repository and run the main file with python
 
