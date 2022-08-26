@@ -1,6 +1,6 @@
-<p align="center"> <img src="./src/imgs/logo.svg" alt="Logo Shopee" width="300px"></p>
+<p align="center"> <img src="./imgs/logo.svg" alt="Logo Shopee" width="300px"></p>
 
-<h1 align="center">Test for selection process Shopee</h1>
+<h1 align="center">Test for Shopee's selection process</h1>
 
 # ✅ Project status
 
